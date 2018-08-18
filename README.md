@@ -1,4 +1,4 @@
-# Pur css fullscreen slide.
+# Pur css fullscreen slider.
 Full-screen slide example using only css
 
 npm install<br/>
