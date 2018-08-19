@@ -75,173 +75,234 @@ html {
 
 .container .slides .slide:nth-child(1) {
   -webkit-animation: slide1 25s linear infinite;
+  animation: slide1 25s linear infinite;
 }
 .container .slides .slide:nth-child(2) {
   -webkit-animation: slide2 25s linear infinite;
+  animation: slide2 25s linear infinite;
 }
 
 .container .slides .slide:nth-child(3) {
   -webkit-animation: slide3 25s linear infinite;
+  animation: slide3 25s linear infinite;
 }
 .container .slides .slide:nth-child(4) {
   -webkit-animation: slide4 25s linear infinite;
+  animation: slide4 25s linear infinite;
 }
 .container .slides .slide:nth-child(5) {
   -webkit-animation: slide5 25s linear infinite;
+  animation: slide5 25s linear infinite;
 }
 
-@-webkit-keyframes slide1 {
-  14% {
+@keyframes slide1 {
+  12% {
     opacity: 1;
     z-index: 1;
   }
-  18% {
+  16% {
     opacity: 0;
     z-index: 0;
   }
-  19% {
+  17% {
     opacity: 0;
     z-index: 0;
   }
-  90% {
+  87% {
     opacity: 0;
     z-index: 0;
   }
+  92% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    z-index: 1;
+    opacity: 1;
+  }
+}
+@keyframes slide2 {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  12% {
+    opacity: 0;
+    z-index: 0;
+  }
+  16% {
+    opacity: 1;
+    z-index: 1;
+  }
+  20% {
+    opacity: 1;
+    z-index: 1;
+  }
+  32% {
+    opacity: 1;
+    z-index: 1;
+  }
+  36% {
+    opacity: 0;
+    z-index: 0;
+  }
+  37% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes slide3 {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  32% {
+    opacity: 0;
+    z-index: 0;
+  }
+  36% {
+    opacity: 1;
+    z-index: 1;
+  }
+  40% {
+    opacity: 1;
+    z-index: 1;
+  }
+  52% {
+    opacity: 1;
+    z-index: 1;
+  }
+  56% {
+    opacity: 0;
+    z-index: 0;
+  }
+  57% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes slide4 {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  52% {
+    opacity: 0;
+    z-index: 0;
+  }
+  56% {
+    opacity: 1;
+    z-index: 1;
+  }
+  60% {
+    opacity: 1;
+    z-index: 1;
+  }
+  72% {
+    opacity: 1;
+    z-index: 1;
+  }
+  76% {
+    opacity: 0;
+    z-index: 0;
+  }
+  77% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes slide5 {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  72% {
+    opacity: 0;
+    z-index: 0;
+  }
+  76% {
+    opacity: 1;
+    z-index: 1;
+  }
+  80% {
+    opacity: 1;
+    z-index: 1;
+  }
+  92% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 5px;
+  background: #fff;
+  -webkit-animation: processbar 25s ease infinite;
+  animation: processbar 25s ease infinite;
+}
+
+@keyframes processbar {
+  0%,
+  16%,
+  36%,
+  56%,
+  76%,
+  100% {
+    width: 0%;
+    opacity: 0;
+  }
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    width: 0%;
+    opacity: 0.4;
+  }
+  12%,
+  32%,
+  52%,
+  72%,
+  92% {
+    width: 100%;
+    opacity: 1;
+  }
+  13%,
+  33%,
+  53%,
+  73%,
+  93% {
+    width: 100%;
+    opacity: 0.4;
+  }
+  14%,
+  34%,
+  54%,
+  74%,
   94% {
+    width: 100%;
     opacity: 0;
-    z-index: 0;
-  }
-  100% {
-    z-index: 1;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slide2 {
-  0% {
-    opacity: 0;
-    z-index: 0;
-  }
-  14% {
-    opacity: 0;
-    z-index: 0;
-  }
-  18% {
-    opacity: 1;
-    z-index: 1;
-  }
-  22% {
-    opacity: 1;
-    z-index: 1;
-  }
-  34% {
-    opacity: 1;
-    z-index: 1;
-  }
-  38% {
-    opacity: 0;
-    z-index: 0;
-  }
-  39% {
-    opacity: 0;
-    z-index: 0;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
-}
-@-webkit-keyframes slide3 {
-  0% {
-    opacity: 0;
-    z-index: 0;
-  }
-  34% {
-    opacity: 0;
-    z-index: 0;
-  }
-  38% {
-    opacity: 1;
-    z-index: 1;
-  }
-  42% {
-    opacity: 1;
-    z-index: 1;
-  }
-  54% {
-    opacity: 1;
-    z-index: 1;
-  }
-  58% {
-    opacity: 0;
-    z-index: 0;
-  }
-  59% {
-    opacity: 0;
-    z-index: 0;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
-}
-@-webkit-keyframes slide4 {
-  0% {
-    opacity: 0;
-    z-index: 0;
-  }
-  54% {
-    opacity: 0;
-    z-index: 0;
-  }
-  58% {
-    opacity: 1;
-    z-index: 1;
-  }
-  62% {
-    opacity: 1;
-    z-index: 1;
-  }
-  74% {
-    opacity: 1;
-    z-index: 1;
-  }
-  78% {
-    opacity: 0;
-    z-index: 0;
-  }
-  79% {
-    opacity: 0;
-    z-index: 0;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
-}
-@-webkit-keyframes slide5 {
-  0% {
-    opacity: 0;
-    z-index: 0;
-  }
-  74% {
-    opacity: 0;
-    z-index: 0;
-  }
-  78% {
-    opacity: 1;
-    z-index: 1;
-  }
-  82% {
-    opacity: 1;
-    z-index: 1;
-  }
-  94% {
-    opacity: 1;
-    z-index: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
   }
 }
 
